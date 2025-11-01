@@ -46,8 +46,10 @@ compose.desktop {
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
+            modules("jdk.unsupported")
+            modules("jdk.unsupported.desktop")
             packageName = "com.sulsoftware.cmp_weather"
-            packageVersion = "1.0.0"
+            packageVersion = "1.1.1"
         }
     }
 }

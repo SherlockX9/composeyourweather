@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
@@ -24,11 +25,15 @@ fun LocationList(locations: List<Location>) {
             Text(text = location.name, fontSize = 12.sp)
             Row() {
                 Text(text = "Latitude: ", fontSize = 12.sp)
-                Text(text = "${location.lat}", fontWeight = FontWeight.Medium, fontSize = 12.sp)
+                SelectionContainer {
+                    Text(text = "${location.lat}", fontWeight = FontWeight.Medium, fontSize = 12.sp)
+                }
             }
             Row() {
                 Text(text = "Longtitude: ", fontSize = 12.sp)
-                Text(text = "${location.lon}", fontWeight = FontWeight.Medium, fontSize = 12.sp)
+                SelectionContainer {
+                    Text(text = "${location.lon}", fontWeight = FontWeight.Medium, fontSize = 12.sp)
+                }
             }
             HorizontalDivider(modifier = Modifier.fillMaxWidth().padding(vertical = 6.dp))
         }

@@ -22,3 +22,15 @@ It uses:
 - To successfully retrieve weather information, open the settings menu within the application and enter your api key.
 
 ---
+- To build the packaged distribution for your OS, run:
+
+  - on macOS/Linux
+     ```shell
+    /gradlew packageDistributionForCurrentOS
+    ```
+  - on Windows
+    ```shell
+    gradlew.bat packageDistributionForCurrentOS
+    ```
+
+---
