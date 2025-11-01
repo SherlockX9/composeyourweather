@@ -26,11 +26,11 @@ It uses:
 
   - on macOS/Linux
      ```shell
-    /gradlew packageDistributionForCurrentOS
+    ./gradlew packageDistributionForCurrentOS
     ```
   - on Windows
     ```shell
-    gradlew.bat packageDistributionForCurrentOS
+    .\gradlew.bat packageDistributionForCurrentOS
     ```
 
 ---
